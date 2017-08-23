@@ -21,7 +21,7 @@ input,a{outline:none;}
 	background:#f5f5f5;
 	border-bottom:1px solid #ddd;
 }
-header,#banner{
+header,#banner,nav{
 	width:1200px;
 	margin:0 auto;
 }
@@ -139,13 +139,39 @@ header span{
 
 
 #banner{
+	position:relative;
 	height:154px;
 }
 #banner-left{
 	float:left;
 	width:230px;
 	height:154px;
-	background:pink;
+}
+.bl-bottom{
+}
+.bl-bottom a{
+	display:inline-block;
+	width:111px;
+	height:34px;
+	font-size:16px;
+	text-align:center;
+	line-height:32px;
+	border:1px solid #eee;
+}
+.bl-bottom a b{
+	display:inline-block;
+	transform:rotate(90deg);
+	font-weight:0;
+	font-size:18px;
+	transition:0.5s;
+}
+.bl-bottom a[href="#4"]:hover .first{
+	display:inline-block;
+	transform:rotate(270deg);
+}
+.bl-bottom a[href="#5"]:hover .second{
+	display:inline-block;
+	transform:rotate(270deg);
 }
 #banner-middle{
 	position:relative;
@@ -198,5 +224,112 @@ header span{
 	top:38px;
 	color:#c2c2c2;
 }
-	
+.banner-bottom{
+	width:970px;
+	height:34px;
+	float:left;
+	margin-top:17px;
+	transition:1s;
+}
+.bb-list li{
+	float:left;
+	margin-right:46px;
+}
+.bb-list li:nth-of-type(1){
+	margin-left:22px;
+}
+.bb-list li a{
+	font-size:16px;
+	line-height:34px;
+}
+.bb-list li span{
+	margin-right:6px;
+	font-family: 'iconfont';
+	color:#d93c84;
+	font-size:16px;
+	transition:0.5s;
+}
+.bb-list li:hover span{
+	display:inline-block;
+	transform:rotate(360deg);
+}
+.bb-list li:hover a{
+	color:#d93c84;
+}
+.banner-right{
+	position:absolute;
+	right:0;
+	top:32px;
+	width:126px;
+	height:36px;
+	line-height:36px;
+	float:right;
+	border-radius:15px;
+	background:#fdfdfd;
+}
+.banner-right a{
+	display:inline-block;
+	margin-left:14px;
+}
+.banner-right span{
+	font-family: 'iconfont';
+	font-size:28px;
+}
+.banner-right b{
+	color:red;
+	margin-left:4px;
+}
 
+.nav-wrap{
+	height:360px;
+}
+nav{
+	height:360px;
+}
+.nav-left{
+	width:230px;
+	height:360px;
+	float:left;
+	background:red;
+}
+.nav-middle{
+	position:relative;
+	width:770px;
+	height:360px;
+	float:left;
+}
+.img-list img{
+	position:absolute;
+	left:0;
+	top:0;
+}
+.flag{
+	position:absolute;
+	left:40%;
+	bottom:14px;
+	width:192px;
+	height:23px;
+}
+.flag li{
+	width:24px;
+	height:24px;
+	line-height:24px;
+	margin-right:8px;
+	float:left;
+	text-align:center;
+	background:#999;
+	border-radius:50%;
+	color:#fff;
+}
+.flag li.active{
+	background:#fff;
+	color:#000;
+}
+
+
+.nav-right{
+	width:200px;
+	height:360px;
+	float:left;
+	background:blue;
+}

@@ -18,5 +18,17 @@ window.onload = function(){
 		$("#collections").mouseleave(function(){
 			$("#collection").hide();
 		})
+		var i = 0;
+		move()
+		function move(){
+			$(".img-list img").eq(i).fadeIn("slow",function(){
+				$(this).css("transform","scale(0.98)")
+			}).end().siblings().fadeOut();
+			
+		}
+		setInterval(function(){
+			i++;
+			move()
+		},2000)
 	})
 }
